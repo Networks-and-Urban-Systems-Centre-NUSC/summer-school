@@ -1,0 +1,922 @@
+:root {
+    --primary: #2c3e50;
+    --secondary: #3498db;
+    --accent: #e74c3c;
+    --light: #ecf0f1;
+    --dark: #2c3e50;
+    --success: #2ecc71;
+    --warning: #f39c12;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 1.5rem;
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* Early Bird Notice */
+.early-bird {
+    background-color: var(--warning);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 1rem auto;
+    font-weight: 600;
+    display: inline-block;
+}
+
+nav {
+    background-color: var(--dark);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+nav ul li {
+    padding: 1rem 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent);
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    padding: 3rem 0;
+}
+
+section:nth-child(even) {
+    background-color: white;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--secondary);
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--secondary);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-accent {
+    background-color: var(--accent);
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.countdown-item {
+    margin: 0 1rem;
+    text-align: center;
+    min-width: 80px;
+}
+
+.countdown-number {
+    background-color: var(--dark);
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+.countdown-label {
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+/* About NUSC section */
+.about-list {
+    margin: 1.5rem 0 1.5rem 2rem;
+    list-style-type: disc;
+}
+
+.about-list li {
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.feature {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+    background-color: var(--primary);
+    color: white;
+    padding: 2rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.feature-content {
+    padding: 1.5rem;
+}
+
+.workshops {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.workshop {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.workshop:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.workshop-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.workshop-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.workshop-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tag {
+    background-color: var(--light);
+    color: var(--dark);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+
+/* More Info Link Styling */
+.more-info-link {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background-color: #f5f5f5;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.more-info-link:hover {
+    background-color: #e8f0fe;
+    color: #0056b3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.more-info-link i {
+    margin-left: 6px;
+    font-size: 12px;
+}
+
+.instructors {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.instructor {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.instructor:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.instructor-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 2rem auto 1rem;
+    border: 5px solid var(--light);
+}
+
+.instructor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.instructor-info {
+    padding: 1.5rem;
+    flex-grow: 1;
+}
+
+.instructor-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.instructor-social a {
+    color: var(--dark);
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+.instructor-social a:hover {
+    color: var(--secondary);
+}
+
+.schedule {
+    margin: 3rem 0;
+}
+
+.schedule-day {
+    margin-bottom: 2rem;
+}
+
+.day-title {
+    background-color: var(--secondary);
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.schedule-item {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.schedule-time {
+    font-weight: bold;
+    color: var(--dark);
+}
+
+.schedule-content h4 {
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+
+
+/* Pricing Table Styles */
+.pricing-table-container {
+    overflow-x: auto;
+    margin: 2rem 0;
+}
+
+.courses-pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.courses-pricing-table th,
+.courses-pricing-table td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.courses-pricing-table th {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.courses-pricing-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.courses-pricing-table td:first-child {
+    font-weight: 500;
+}
+
+.courses-pricing-table a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.courses-pricing-table a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.pricing-note {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #666;
+}
+
+/* Add this to your CSS file */
+.early-bird-centered {
+    text-align: center;
+    font-weight: bold;
+    color: #d9534f; /* Red color to make it stand out */
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .courses-pricing-table th,
+    .courses-pricing-table td {
+        padding: 12px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+.booking-action {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.booking-action p {
+    margin-top: 1rem;
+}
+
+/* Location section */
+.location-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.location-details {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.address i {
+    font-size: 1.5rem;
+    color: var(--secondary);
+    margin-right: 1rem;
+}
+
+.important-notes {
+    background-color: var(--light);
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin: 1.5rem 0;
+}
+
+.important-notes h4 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.important-notes ul {
+    list-style-position: inside;
+}
+
+.important-notes li {
+    margin-bottom: 0.5rem;
+}
+
+.location-map {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 600px;
+}
+
+.location-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Booking section */
+.booking-info {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.booking-cta {
+    margin: 2rem 0;
+}
+
+.booking-reminder {
+    background-color: var(--light);
+    padding: 1.5rem;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.booking-reminder p {
+    margin-bottom: 0.5rem;
+}
+
+.faq {
+    margin: 3rem 0;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 1rem;
+    background-color: var(--light);
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer {
+    padding: 0 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.faq-item.active .faq-answer {
+    padding: 1rem;
+    max-height: 500px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    color: var(--secondary);
+    margin-right: 1rem;
+}
+
+.contact-item a {
+    color: var(--secondary);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.contact-message {
+    text-align: center;
+    background-color: var(--light);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+
+/* Footer styling with proper spacing */
+footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: left;
+}
+
+.footer-section {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section h3 {
+    color: white;
+    margin-bottom: 2rem;
+    position: relative;
+    font-size: 1.4rem;
+    text-align: left;
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--secondary);
+}
+
+.footer-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.8rem;
+}
+
+/* Updated footer link styles to match header hover effect */
+.footer-section ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: all 0.3s;
+    position: relative; /* Added for the underline effect */
+    font-weight: 600; /* Added to match header links */
+}
+
+/* Add the underline effect on hover, just like the header links */
+.footer-section ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent); /* Same accent color as header links */
+    transition: width 0.3s;
+}
+
+.footer-section ul li a:hover::after {
+    width: 100%; /* Expand the underline on hover */
+}
+
+/* Modified hover state */
+.footer-section ul li a:hover {
+    color: white;
+    /* Removed the padding-left: 5px; to prevent shifting */
+}
+
+.footer-section p {
+    margin-bottom: 0.8rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--secondary);
+    transform: translateY(-3px);
+}
+.footer-bottom {
+    margin-top: 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+}
+
+.footer-bottom a {
+    color: var(--secondary); /* Use your secondary blue color */
+    text-decoration: none;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.footer-bottom a:hover {
+    color: white;
+}
+
+/* Add the underline effect on hover */
+.footer-bottom a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: width 0.3s;
+}
+
+.footer-bottom a:hover::after {
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .footer-section {
+        text-align: center;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    
+    .footer-section h3 {
+        text-align: center;
+    }
+    
+    .footer-section h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .social-links a:hover {
+        color: var(--secondary);
+        transform: translateY(-3px);
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Mobile navigation */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .location-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+        display: none;
+    }
+    
+    nav.active ul {
+        display: flex;
+    }
+    
+    nav ul li {
+        padding: 0.8rem 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .schedule-item {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .countdown-item {
+        margin: 0 0.5rem;
+        min-width: 60px;
+    }
+    
+    .countdown-number {
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+    
+    .pricing-option {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .countdown {
+        flex-wrap: wrap;
+    }
+    
+    .countdown-item {
+        margin: 0.5rem;
+    }
+}
