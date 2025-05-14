@@ -298,6 +298,16 @@ p {
     margin-bottom: 1rem;
 }
 
+.tag {
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333;
+    padding: 0.4rem 0.8rem;
+    border-radius: 50px; /* Pill shape */
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
 /* Add this for responsive behavior on smaller screens */
 @media (max-width: 768px) {
     .workshops {
@@ -627,6 +637,28 @@ p {
     margin-bottom: 0.5rem;
 }
 
+.book-now-container {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.btn-accent {
+    background-color: #e74c3c; /* Same red as the existing button */
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn-accent:hover {
+    background-color: #c0392b; /* Darker shade on hover */
+}
+
 .faq {
     margin: 3rem 0;
 }
@@ -663,20 +695,21 @@ p {
 .contact-info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 3rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+    gap: 2rem;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
-    margin: 1rem;
+    margin: 0;
 }
 
 .contact-item i {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--secondary);
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
 
 .contact-item a {
@@ -692,8 +725,34 @@ p {
 .contact-message {
     text-align: center;
     background-color: var(--light);
-    padding: 2rem;
-    border-radius: 10px;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.contact-text-center {
+    text-align: center;
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+/* Add this to reduce overall section padding */
+#contact {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+#contact h2 {
+    margin-bottom: 1rem; /* Ensure heading has less margin */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
 
 
