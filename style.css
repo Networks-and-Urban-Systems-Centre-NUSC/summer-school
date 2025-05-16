@@ -956,6 +956,8 @@ footer {
     color: white;
     font-size: 1.5rem;
     padding: 1rem;
+    color: #333; /* or another darker color */
+    background-color: var(--light);
 }
 
 /* Responsive */
