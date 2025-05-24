@@ -17,17 +17,11 @@
 
 ## 📘 About the Summer School
 
-The **Networks and Urban Systems Centre (NUSC)** at the University of Greenwich brings together multi-disciplinary expertise exploring the expanding frontiers of urban challenges and opportunities to improve quality of life, competitiveness, and sustainability. With strengths in transport, supply chain, and social network systems, our five interlinked research strands include:
+The **University of Greenwich Networks and Urban Systems Centre (NUSC)** has multi-disciplinary expertise exploring the expanding frontiers of urban challenges and opportunities to improve quality of life, competitiveness and sustainability. With expertise in transport, supply chain and social network systems, we focus on five interlinked strands: production systems; urban ecosystems, business ecosystems, digital business models, and global value chains. We have one of the largest concentrations of business network analysts in Europe, applying the techniques of organisational network analysis to a wide range of business problems, re-conceiving individual firms, organisations and markets as structured relationships.
 
-- Production Systems  
-- Urban Ecosystems  
-- Business Ecosystems  
-- Digital Business Models  
-- Global Value Chains  
+The **NUSC Summer School** provides opportunities for those both new to network and data science and those who wish to consolidate or expand existing knowledge in the field. Ten distinct courses offer introductions to R and Python, an introduction to social network analysis, organisational network analysis with xUCINET, discourse network analysis, experimental methods, programmatic approaches to text data, and non-coding approaches to text, quantitative and network analysis using Generative AI.
 
-NUSC is home to one of the largest concentrations of business network analysts in Europe.
-
-The **NUSC Summer School** offers ten intensive workshops, designed for postgraduate students, researchers, and social science practitioners. Topics range from R and Python programming to social network analysis, discourse network analysis, experimental methods, text analytics, and Generative AI. The event is in-person only.
+The courses are aimed to equip postgraduate students, researchers and social science practitioners with skills to apply in practical projects. This is an in-person event only.
 
 ---
 
