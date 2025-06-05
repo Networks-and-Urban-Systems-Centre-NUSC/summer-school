@@ -459,6 +459,13 @@ p {
     font-size: 0.9rem;
 }
 
+.room-info {
+    font-weight: 600;
+    color: var(--secondary);
+    margin: 0.5rem 0 0.25rem 0;
+    font-size: 0.95rem;
+}
+
 /* For mobile devices */
 @media (max-width: 768px) {
     .schedule-item {
