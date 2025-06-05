@@ -23,18 +23,19 @@ This repository provides a summary of the summer school. Registered participants
 
 ## 📚 Workshop List
 
-| # | Workshop Title | Date & Time | Instructor(s) | Repository |
-|--:|----------------|-------------|-----------------------------|------------|
-| 1 | Introduction to coding for quantitative and qualitative research with R | Mon 9 Jun, 10:00–13:00 | Bruce Cronin | [repo 🔒](https://github.com/networks-and-urban-systems-centre-nusc/NUSCSS2025-workshop-r-intro) |
-| 2 | Introduction to coding for quantitative and qualitative research Python | Mon 9 Jun, 13:00–16:00 | Mohit Kumar Singh | [repo 🔒](https://github.com/networks-and-urban-systems-centre-nusc/NUSCSS2025-workshop-python-intro) |
-| 3 | Introduction to Discourse Network Analysis | Mon 9 Jun, 13:00–16:00 | Francisca Da Gama | [repo 🔒](https://github.com/networks-and-urban-systems-centre-nusc/NUSCSS2025-workshop-discourse-networks) |
-| 4 | Experimental methods and programming in oTree | Mon 9 Jun, 10:00–16:00 | Martina Testori | [repo 🔒](https://github.com/networks-and-urban-systems-centre-nusc/NUSCSS2025-workshop-otree-experiments) |
-| 5 | Doing Research with Social Network Analysis: Tools, theories, and applications | Tue 10 - Thu 12 Jun, 10:00–16:00 | Srinidhi Vasudevan, Anna Piazza, Balint Diószegi | [repo 🔒](https://github.com/networks-and-urban-systems-centre-nusc/NUSCSS2025-workshop-sna) |
-| 6 | Programmatic approaches to thematic analysis for text data | Tue 10 Jun, 10:00–16:00 | James Duong (Quang Huy) | [repo 🔒](https://github.com/networks-and-urban-systems-centre-nusc/NUSCSS2025-workshop-thematic-text) |
-| 7 | Textual analysis with Generative AI | Wed 11 Jun, 10:00–16:00 | Mohit Kumar Singh | [repo 🔒](https://github.com/networks-and-urban-systems-centre-nusc/NUSCSS2025-workshop-genai-text) |
-| 8 | Generative AI for Social Network Analysis without coding | Thu 12 Jun, 10:00–16:00 | Guido Conaldi | [repo 🔒](https://github.com/networks-and-urban-systems-centre-nusc/NUSCSS2025-workshop-genai-sna-vibecode) |
-| 9 | Generative AI for statistical analysis without coding | Fri 13 Jun, 10:00–16:00 | Guido Conaldi | [repo 🔒](https://github.com/networks-and-urban-systems-centre-nusc/NUSCSS2025-workshop-genai-stats-vibecode) |
-| 10 | Organisational Network Analysis with xUCINET in R | Fri 13 Jun, 10:00–16:00 | Bruce Cronin | [repo 🔒](https://github.com/networks-and-urban-systems-centre-nusc/NUSCSS2025-workshop-ona-xucinet) |
+| #  | Workshop Title                                                                 | Date & Time                         | Room       | Instructor(s)                                    | Repository |
+|---:|----------------------------------------------------------------------------------|--------------------------------------|------------|--------------------------------------------------|------------|
+| 1  | Introduction to coding for quantitative and qualitative research with R        | Mon 9 Jun, 10:00–13:00              | HH103      | Bruce Cronin                                     | [repo 🔒](https://github.com/networks-and-urban-systems-centre-nusc/NUSCSS2025-workshop-r-intro) |
+| 2  | Introduction to coding for quantitative and qualitative research Python        | Mon 9 Jun, 13:00–16:00              | HH103      | Mohit Kumar Singh                                | [repo 🔒](https://github.com/networks-and-urban-systems-centre-nusc/NUSCSS2025-workshop-python-intro) |
+| 3  | Introduction to Discourse Network Analysis                                     | Mon 9 Jun, 13:00–16:00              | HH102      | Francisca Da Gama                                | [repo 🔒](https://github.com/networks-and-urban-systems-centre-nusc/NUSCSS2025-workshop-discourse-networks) |
+| 4  | Experimental methods and programming in oTree                                  | Mon 9 Jun, 10:00–16:00              | HH101      | Martina Testori                                  | [repo 🔒](https://github.com/networks-and-urban-systems-centre-nusc/NUSCSS2025-workshop-otree-experiments) |
+| 5  | Doing Research with Social Network Analysis: Tools, theories, and applications | Tue 10 – Thu 12 Jun, 10:00–16:00    | HH103 Tue; HH102 Wed,Thu| Srinidhi Vasudevan, Anna Piazza, Balint Diószegi | [repo 🔒](https://github.com/networks-and-urban-systems-centre-nusc/NUSCSS2025-workshop-sna) |
+| 6  | Programmatic approaches to thematic analysis for text data                     | Tue 10 Jun, 10:00–16:00             | QA039      | James Duong (Quang Huy)                          | [repo 🔒](https://github.com/networks-and-urban-systems-centre-nusc/NUSCSS2025-workshop-thematic-text) |
+| 7  | Textual analysis with Generative AI                                            | Wed 11 Jun, 10:00–16:00             | HH103      | Mohit Kumar Singh                                | [repo 🔒](https://github.com/networks-and-urban-systems-centre-nusc/NUSCSS2025-workshop-genai-text) |
+| 8  | Generative AI for Social Network Analysis without coding                       | Thu 12 Jun, 10:00–16:00             | HH103      | Guido Conaldi                                    | [repo 🔒](https://github.com/networks-and-urban-systems-centre-nusc/NUSCSS2025-workshop-genai-sna-vibecode) |
+| 9  | Generative AI for statistical analysis without coding                          | Fri 13 Jun, 10:00–16:00             | HH103      | Guido Conaldi                                    | [repo 🔒](https://github.com/networks-and-urban-systems-centre-nusc/NUSCSS2025-workshop-genai-stats-vibecode) |
+| 10 | Organisational Network Analysis with xUCINET in R                              | Fri 13 Jun, 10:00–16:00             | HH102      | Bruce Cronin                                     | [repo 🔒](https://github.com/networks-and-urban-systems-centre-nusc/NUSCSS2025-workshop-ona-xucinet) |
+
 
 > 🔒 **Note:** Repositories are private. Registered participants will receive access via GitHub Organisation invite.
 
