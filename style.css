@@ -619,6 +619,29 @@ p {
     border: 0;
 }
 
+.courses-here {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+    border-left: 4px solid var(--secondary);
+}
+
+.courses-here h4 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.courses-here ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.courses-here li {
+    margin-bottom: 0.3rem;
+}
+
 /* Booking section */
 .booking-info {
     background-color: white;
