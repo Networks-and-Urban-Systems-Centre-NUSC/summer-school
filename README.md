@@ -29,7 +29,7 @@ To ensure you have access from day one, please complete the following steps:
 If you do not already have a GitHub account, please create one as soon as possible.  
 ➡️ Go to: [https://github.com/join](https://github.com/join)  
 Follow the on-screen instructions to register.  
-📘 For guidance, see GitHub’s official documentation: [Creating an account on GitHub](https://docs.github.com/en/get-started/signing-up-for-github)
+For guidance, see GitHub’s official documentation: [Creating an account on GitHub](https://docs.github.com/en/get-started/signing-up-for-github)
 
 ### 2. Send Us Your GitHub Username (Required)
 Once your account is active, please ensure you have submitted your GitHub username (e.g. via email). This will allow us to grant you access to the private repositories for the workshops you are attending.
@@ -38,9 +38,9 @@ Once your account is active, please ensure you have submitted your GitHub userna
 We recommend applying for **GitHub Education benefits**, which include free access to GitHub Copilot Pro.
 You will need to verify your academic status using a school-issued email or supporting documentation (e.g. dated student ID, staff ID, enrolment letter, or transcript). Approval typically takes up to 72 hours.
 
-- 🔗 Apply here: [GitHub Education](https://education.github.com/)
-- 🎓 Students: [Apply as a student](https://education.github.com/students)
-- 🧑‍🏫 Teachers: [Apply as an academic](https://education.github.com/teachers)
+-  Apply here: [GitHub Education](https://education.github.com/)
+-  Students: [Apply as a student](https://education.github.com/students)
+-  Teachers: [Apply as an academic](https://education.github.com/teachers)
 
 This step is required if you are attending either of the following workshops:
 - *Generative AI for Social Network Analysis without Coding*
