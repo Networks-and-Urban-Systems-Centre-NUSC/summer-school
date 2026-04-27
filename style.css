@@ -65,10 +65,15 @@ header {
 }
 
 /* Reference list — academic hanging-indent style for course bibliographies */
+.references-heading {
+    margin: 1.25rem 0 0.4rem;
+    font-weight: 700;
+    color: var(--primary);
+}
 .references {
     list-style: none;
     padding-left: 0;
-    margin: 0.5rem 0 0;
+    margin: 0;
 }
 .references li {
     padding-left: 2rem;
