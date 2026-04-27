@@ -120,4 +120,14 @@ document.addEventListener('DOMContentLoaded', function() {
         element.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
         fadeInObserver.observe(element);
     });
+
+    // Sticky "Book a place" CTA — show once the hero is out of view
+    const stickyBook = document.getElementById('sticky-book');
+    const header = document.querySelector('header');
+    if (stickyBook && header) {
+        const headerObserver = new IntersectionObserver((entries) => {
+            stickyBook.classList.toggle('visible', !entries[0].isIntersecting);
+        });
+        headerObserver.observe(header);
+    }
 });

@@ -64,6 +64,44 @@ header {
     font-weight: bold;
 }
 
+/* Sticky "Book a place" CTA — fades in after the hero scrolls out of view */
+.sticky-book {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 99;
+    background-color: var(--accent);
+    color: white;
+    padding: 0.85rem 1.4rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out, background-color 0.2s;
+    pointer-events: none;
+}
+.sticky-book.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+.sticky-book:hover {
+    background-color: #c0392b;
+}
+.sticky-book i {
+    margin-right: 0.4rem;
+}
+@media (max-width: 600px) {
+    .sticky-book {
+        bottom: 1rem;
+        right: 1rem;
+        padding: 0.7rem 1.1rem;
+        font-size: 0.95rem;
+    }
+}
+
 /* Two-step booking flow box */
 .booking-flow {
     background-color: var(--light);
