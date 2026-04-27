@@ -45,7 +45,7 @@ header {
 /* Early Bird Notice for the header */
 /* Sized to match .btn so it sits visually balanced next to the Book button */
 .early-bird {
-    background-color: #a05a08; /* amber — readable contrast with white */
+    background-color: #c4570a; /* deep orange — more saturated than amber */
     color: white;
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
