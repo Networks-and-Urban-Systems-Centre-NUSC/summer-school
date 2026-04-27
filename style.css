@@ -358,7 +358,14 @@ p {
     height: 100%;
     display: flex;
     flex-direction: column;
+    border-top: 4px solid var(--secondary);
 }
+
+/* Topic accent stripe — groups cards by subject area for quicker scanning */
+.workshop.topic-software { border-top-color: #3498db; }    /* R, Python — secondary blue */
+.workshop.topic-network  { border-top-color: #9b59b6; }    /* Networks — purple */
+.workshop.topic-ai       { border-top-color: #1abc9c; }    /* Text & AI — teal */
+.workshop.topic-methods  { border-top-color: #f39c12; }    /* Methods/SPSS/oTree — orange */
 
 .workshop:hover {
     transform: translateY(-5px);
