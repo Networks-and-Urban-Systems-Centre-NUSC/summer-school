@@ -39,6 +39,20 @@ document.addEventListener('DOMContentLoaded', function() {
     function formatTime(time) {
         return time < 10 ? "0" + time : time;
     }
+
+    // Early bird notice: show days-remaining until 30 April 2026, then hide
+    const ebDeadline = new Date("April 30, 2026 23:59:59").getTime();
+    const ebNotice = document.getElementById("early-bird-notice");
+    if (ebNotice) {
+        const msLeft = ebDeadline - Date.now();
+        if (msLeft > 0) {
+            const daysLeft = Math.ceil(msLeft / (1000 * 60 * 60 * 24));
+            const dayWord = daysLeft === 1 ? "day" : "days";
+            ebNotice.textContent = `Early bird offer ends 30 April 2026 — ${daysLeft} ${dayWord} left`;
+        } else {
+            ebNotice.style.display = "none";
+        }
+    }
     
     // Mobile navigation toggle
     const menuToggle = document.querySelector('.menu-toggle');
