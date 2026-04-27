@@ -514,14 +514,24 @@ p {
 
 .schedule-day {
     margin-bottom: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 .day-title {
     background-color: var(--secondary);
-    padding: 0.75rem;
-    border-radius: 5px;
-    margin-bottom: 0.75rem;
+    padding: 1rem 1.5rem;
+    margin-bottom: 0;
+    border-radius: 0;
 }
+
+/* Progressive day colours give each day a distinct identity at a glance */
+.schedule-day:nth-of-type(2) .day-title { background-color: #1abc9c; }
+.schedule-day:nth-of-type(3) .day-title { background-color: #9b59b6; }
+.schedule-day:nth-of-type(4) .day-title { background-color: #f39c12; }
+.schedule-day:nth-of-type(5) .day-title { background-color: var(--accent); }
 
 
 .day-title h3 {
@@ -535,7 +545,8 @@ p {
     display: grid;
     grid-template-columns: 140px 1fr;
     gap: 0.75rem; /* Reduced gap */
-    padding: 0.75rem 0.5rem;
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
 }
 
