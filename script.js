@@ -1,9 +1,9 @@
 // NUSC Summer School Website JavaScript
 
-// Update the countdown timer to the event date (June 9, 2025)
+// Update the countdown timer to the event date (May 18, 2026)
 document.addEventListener('DOMContentLoaded', function() {
-    // Set the date we're counting down to - June 9, 2025
-    const countdownDate = new Date("June 9, 2025 10:00:00").getTime();
+    // Set the date we're counting down to - May 18, 2026
+    const countdownDate = new Date("May 18, 2026 10:00:00").getTime();
     
     // Update the countdown every 1 second
     const timer = setInterval(function() {
