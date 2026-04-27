@@ -64,6 +64,34 @@ header {
     font-weight: bold;
 }
 
+/* Reference list — academic hanging-indent style for course bibliographies */
+.references {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.5rem 0 0;
+}
+.references li {
+    padding-left: 2rem;
+    text-indent: -2rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.93rem;
+    color: #555;
+    line-height: 1.5;
+}
+.references li:last-child {
+    margin-bottom: 0;
+}
+.references li a {
+    color: var(--secondary);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--secondary);
+    transition: all 0.2s;
+}
+.references li a:hover {
+    color: var(--primary);
+    border-bottom-style: solid;
+}
+
 /* Sticky "Book a place" CTA — fades in after the hero scrolls out of view */
 .sticky-book {
     position: fixed;
