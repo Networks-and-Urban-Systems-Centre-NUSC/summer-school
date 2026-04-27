@@ -42,15 +42,15 @@ header {
     display: block;
 }
 
-/* Early Bird Notice for the header*/
+/* Early Bird Notice for the header */
+/* Sized to match .btn so it sits visually balanced next to the Book button */
 .early-bird {
-    background-color: #b3690a; /* darker amber — better contrast with white text */
+    background-color: #8b4d08; /* deep amber — stronger contrast with white */
     color: white;
-    padding: 0.6rem 1.2rem;
+    padding: 0.8rem 1.5rem;
     border-radius: 5px;
     margin: 1rem auto;
     font-weight: 600;
-    font-size: 1.05rem;
     display: inline-block;
 }
 
