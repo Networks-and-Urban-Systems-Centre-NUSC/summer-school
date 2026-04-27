@@ -587,6 +587,12 @@ p {
     border-collapse: collapse;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.courses-pricing-table tbody tr:nth-child(even) {
+    background-color: rgba(236, 240, 241, 0.5);
 }
 
 .courses-pricing-table th,
@@ -604,23 +610,33 @@ p {
     letter-spacing: 0.5px;
 }
 
-.courses-pricing-table tr:hover {
-    background-color: #f5f5f5;
+.courses-pricing-table tbody tr:hover {
+    background-color: rgba(52, 152, 219, 0.1);
 }
 
 .courses-pricing-table td:first-child {
     font-weight: 500;
 }
 
+.courses-pricing-table td:not(:first-child) {
+    text-align: center;
+    white-space: nowrap;
+}
+
 .courses-pricing-table a {
-    color: #007BFF;
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    color: var(--secondary);
+    background-color: rgba(52, 152, 219, 0.1);
+    border-radius: 6px;
+    font-weight: 700;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 .courses-pricing-table a:hover {
-    color: #0056b3;
-    text-decoration: underline;
+    color: white;
+    background-color: var(--secondary);
 }
 
 .pricing-note {
