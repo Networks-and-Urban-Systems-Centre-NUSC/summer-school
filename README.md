@@ -4,8 +4,7 @@
 📍 **Queen Anne Court, University of Greenwich, London**
 
 🔗 [📖 Full event website](https://networks-and-urban-systems-centre-nusc.github.io/summer-school/)  
-🔗 [📝 Reserve your place (Microsoft Forms)](https://forms.office.com/Pages/ResponsePage.aspx?id=CvQWNelaVkm7qzlRYuWJzqPik0joK59JmFoEwh8bOU9UN0ZNNkVRQUFZMTBWT0lDWVVENDFPS09VQS4u)  
-🔗 [💳 Pay via University Store](https://store.gre.ac.uk/conferences-and-events/faculties-schools/fob/conferences-events/nusc-summer-school-in-network-and-data-science)
+🔗 [📝 Book your place](https://store.gre.ac.uk/conferences-and-events/faculties-schools/fob/conferences-events/nusc-summer-school-in-network-and-data-science)
 
 > 🟠 **Early bird offer ends Thursday 30 April 2026.**
 
